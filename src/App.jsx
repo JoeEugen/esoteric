@@ -1,7 +1,9 @@
+import Header from "./sections/Header/Header";
+
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Header />
     </>
   );
 }
