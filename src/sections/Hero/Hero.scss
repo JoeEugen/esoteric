@@ -1,0 +1,59 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: center;
+  min-height: clamp(70vh, 80vh, 90vh);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./../../assets/symbol.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: min(70vw, 80rem);
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0;
+
+    filter: saturate(0.7) contrast(0.9);
+  }
+}
+
+.hero__content {
+  grid-column: 5/-1;
+  z-index: 1;
+
+  .hero__header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 1.3;
+
+    span {
+      color: var(--accent);
+    }
+  }
+  .hero__text {
+    padding-block: 2rem;
+    font-size: 2rem;
+    color: var(--secondary);
+  }
+
+  .hero__button {
+    font-weight: 600;
+
+    border: 2px solid var(--accent);
+    border-radius: 2rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    transition: all ease 0.6s;
+
+    &:hover {
+      background-color: var(--accent);
+      color: var(--bg);
+    }
+  }
+}
