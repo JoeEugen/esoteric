@@ -1,34 +1,39 @@
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    max-width: 1200px;
-    margin-inline: auto;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
 
-    background-color:  var(--bg);
-    color: var(--text);
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .h1 {
-    font-family: "Lora", serif;
-    font-size: 6rem;
-    font-weight: 700;
+  font-family: "Lora", serif;
+  font-size: 6rem;
+  font-weight: 700;
 }
 
 .h2 {
-    font-family: "Lora", serif;
-    font-size: 4rem;
-    font-weight: 700;
+  font-family: "Lora", serif;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .h3 {
-    font-family: "Lora", serif;
-    font-size: 2.4rem;
-    font-weight: 700;
+  font-family: "Lora", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.none {
+  display: none;
 }

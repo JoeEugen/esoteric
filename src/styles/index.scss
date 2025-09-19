@@ -1,11 +1,10 @@
 // Main
-@use './reset';
-@use './tokens';
-@use './base';
-
-
+@use "./reset";
+@use "./tokens";
+@use "./base";
 
 // Blocks
-@use './../sections/Header/Header.scss';
-@use './../pages/main/Main.scss';
-@use './../sections/Hero/Hero.scss';
+@use "./../sections/Header/Header.scss";
+@use "./../pages/main/Main.scss";
+@use "./../sections/Hero/Hero.scss";
+@use "./../sections/CardForm/CardForm.scss";

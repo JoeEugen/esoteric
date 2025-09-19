@@ -1,0 +1,146 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 3rem;
+
+  position: relative;
+
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card__title {
+      font-weight: 400;
+      font-size: 4rem;
+      color: var(--accent);
+    }
+
+    .card__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      padding-block: 3rem;
+
+      width: 60ch;
+
+      color: var(--secondary);
+
+      text-align: center;
+    }
+  }
+
+  .card__field-group {
+    border: 2px solid var(--accent);
+    border-radius: 2rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    margin-bottom: 2rem;
+
+    .card__legend {
+      color: var(--secondary);
+    }
+  }
+
+  .card__field {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    &:not(:last-child) {
+      padding-bottom: 1.5rem;
+    }
+
+    .card__checkbox {
+      display: flex;
+      gap: 1rem;
+
+      border: 2px solid var(--input);
+      border-radius: 2rem;
+
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+    }
+
+    .card__input {
+      background-color: var(--input);
+      border-radius: 2rem;
+      padding-block: 1rem;
+      padding-inline: 2rem;
+
+      color: var(--text);
+
+      width: 100%;
+      flex: 1;
+
+      &::placeholder {
+        color: var(--secondary);
+      }
+    }
+
+    .card__textarea {
+      background-color: var(--input);
+      width: 100%;
+      border-radius: 2rem;
+      padding-inline: 2rem;
+      padding-block: 1rem;
+      &::placeholder {
+        color: var(--secondary);
+      }
+      &:focus {
+        outline: none;
+        box-shadow: inset 0 0 10px 3px var(--accent);
+      }
+    }
+  }
+
+  .card__button {
+    background-color: var(--accent);
+    border-radius: 2rem;
+
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    width: 100%;
+
+    transition: all ease 0.4s;
+
+    &:hover {
+      background: none;
+      box-shadow: inset 0 0 5px 4px var(--accent);
+    }
+  }
+
+  .card__popup-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(1rem);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card__done {
+      width: 30vw;
+      height: 20vh;
+
+      border: 4px solid var(--accent);
+      border-radius: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.card__disabled {
+  color: var(--secondary);
+  opacity: 0.5;
+}
